@@ -33,7 +33,7 @@
     ej.grids.Grid.Inject(ej.grids.Filter, ej.grids.Edit, ej.grids.Toolbar, ej.grids.Sort, ej.grids.Freeze);
     
     var grid = new ej.grids.Grid({
-        dataSource: filterData,
+        dataSource: filterData.slice(0, 5),
         allowFiltering: true,
         editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
         toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
