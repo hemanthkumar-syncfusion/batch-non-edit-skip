@@ -34,14 +34,13 @@
     
     var grid = new ej.grids.Grid({
         dataSource: filterData,
-        height: 300,
         allowFiltering: true,
         editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
         toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
         allowSorting: true,
         allowMultiSorting: true,
         allowPaging: true,
-        pageSettings: { pageSize: 10 },
+        pageSettings: { pageSize: 5 },
         allowGrouping: true,
         columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100, isPrimaryKey: true },
